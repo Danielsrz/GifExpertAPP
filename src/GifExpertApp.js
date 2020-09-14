@@ -4,15 +4,13 @@ import GifGrid from './components/GifGrid'
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Digimon']);
+    const [categories, setCategories] = useState(['Pokemon']);
 
     return (
         <div>
             <h1 className="animate__animated animate__flipInX animate__delay-1s">Los GIFS de Danito</h1>
             <AddCategory setCategories={setCategories}/>
             <hr/>
-
-            
 
             <ol>
                 {
@@ -26,6 +24,6 @@ const GifExpertApp = () => {
             </ol>
         </div>
     )
-                };
+};
 
 export default GifExpertApp;
